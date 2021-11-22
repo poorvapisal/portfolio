@@ -1,0 +1,65 @@
+@import "../../global.scss";
+
+.about{
+    background-color: white;
+    display: flex;
+    height: calc(100vh - 70px);
+
+    
+    
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+       
+        
+        .imgContainer{
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background-color: rgb(207,171,99);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: center;
+            align-items: flex-end;
+            //padding-top: 10px;
+            
+
+            @include mobile{
+                align-items: flex-start;
+            }
+
+            img{
+                height: 450px;
+                width: 450px;
+            }
+        }
+    }
+
+    .right{
+        flex: 0.5;
+        position: relative;
+        padding: 120px;
+        width: 30vh;
+
+       
+           right: 100px;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            align-items: center;
+
+        //arrow to portfolio
+        //a{
+            //position: absolute;
+            //bottom: 10px;
+            //left: 40%;
+        //}
+    }
+}
